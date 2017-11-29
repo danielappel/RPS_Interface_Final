@@ -1,4 +1,4 @@
-
+import java.util.Random;
 
 public class RPSPlayer implements Player
 {
@@ -21,27 +21,35 @@ public class RPSPlayer implements Player
      * Will be random if computer = true
      */
     public void setChoice(boolean computer) {
-
+         if(!cpu) {
+             //ask the user
+             System.out.println("Enter your choice: \nrock \npaper \nscissors");
+             this.choice = scan.next();
+            }
+         else {
+                //use random choice
+                this.choice = randomChoice();
+         }
     }
     
     public boolean getCPU() {
-        return false;
+        return this.cpu;
     }
     
     public int getScore() {
-        return 0;
+        return this.score;
     }
     
     public void updateScore(int value) {
-        
+        this.score += value;
     }
     
     public String getName() {
-        return null;
+        return this.name;
     }
     
     public String getChoice() {
-        return null;
+        return this.choice;
     }
     
     public String toString() {
@@ -52,13 +60,31 @@ public class RPSPlayer implements Player
      * Set's the player name.  If computer = true, returns "CPU"
      */
     public String setName(boolean computer) {
-        return null;
+        if(!cpu) {
+            System.out.println("What is your name?");
+            this.name = scan.next();
+        }
+        else {
+            this.name = "CPU";
+        }
+        return this.name;
     }
     
      /**
      * If cpu then return a random choice
      */
     public String randomChoice() {
-        return null;
+            Random gen = new Random();
+          
+            int value = gen.nextInt(3);
+            if(value == 0) {
+                return "rock";
+            }
+            else if (value == 1) {
+                return "paper";
+            }
+            else {
+                return "scissors";
+            }
     }
 }

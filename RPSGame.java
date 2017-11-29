@@ -2,8 +2,8 @@
 public class RPSGame implements Game
 {
     // instance variables - replace the example below with your own
-    public Player pOne;
-    public Player pTwo;
+    private Player pOne;
+    private Player pTwo;
     int numPlayers;
    
 
@@ -15,6 +15,11 @@ public class RPSGame implements Game
         // initialise instance variables
         numPlayers = determineNumberPlayers();
 
+    }
+    
+    public void cheat() {
+        //Not accessible in Game because only declared here
+        System.out.println("Going to cheat!");
     }
     
     public Player getP1() {
@@ -42,7 +47,9 @@ public class RPSGame implements Game
      * Returns 1 or 2 based on how many players are playing RPS
      */
     public int determineNumberPlayers() {
-        return 0;
+        System.out.println("How many players? 1 or 2");
+      
+        return scan.nextInt();
     }
     
     /**
@@ -76,15 +83,21 @@ public class RPSGame implements Game
      * Update score based on who wins. Winner will be 1 for player 1 win, 0 for tie and -1 for player 2 win
      */
     public void updateScore(int winner) {
-       
+       if(winner == 1) {
+           pOne.updateScore(1);
+        }
+        else if(winner == -1) {
+            pTwo.updateScore(1);
+        }
     }
     
     /**
      * Ask to continue and return true for yes
      */
     public boolean continueGame() {
+        System.out.println("Do you want to continue? y/n");
         
-        return false;
+        return scan.next().equals("y");
     }
 
 }

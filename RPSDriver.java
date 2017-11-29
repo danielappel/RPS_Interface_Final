@@ -9,6 +9,8 @@ public class RPSDriver
 {
     public static void main(String[] args) {
         Game myRPS = new RPSGame();
+        //Won't work as not in Game interface
+        //myRPS.cheat();
         
         myRPS.setPlayers();
         Player pOne = myRPS.getP1();
