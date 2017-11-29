@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=RPSGame
+comment1.params=
+comment1.target=RPSGame()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RPS\r\n
+comment2.params=
+comment2.target=Player\ getP1()
+comment3.params=
+comment3.target=Player\ getP2()
+comment4.params=
+comment4.target=void\ setPlayers()
+comment5.params=
+comment5.target=int\ determineNumberPlayers()
+comment5.text=\r\n\ Returns\ 1\ or\ 2\ based\ on\ how\ many\ players\ are\ playing\ RPS\r\n
+comment6.params=p1\ p2
+comment6.target=int\ comparePlayers(Player,\ Player)
+comment6.text=\r\n\ Compare\ player\ values\ and\ return\ 1\ for\ p1\ win,\ 0\ for\ tie\ &\ -1\ for\ loss\r\n
+comment7.params=winner
+comment7.target=void\ updateScore(int)
+comment7.text=\r\n\ Update\ score\ based\ on\ who\ wins.\ Winner\ will\ be\ 1\ for\ player\ 1\ win,\ 0\ for\ tie\ and\ -1\ for\ player\ 2\ win\r\n
+comment8.params=
+comment8.target=boolean\ continueGame()
+comment8.text=\r\n\ Ask\ to\ continue\ and\ return\ true\ for\ yes\r\n
+numComments=9

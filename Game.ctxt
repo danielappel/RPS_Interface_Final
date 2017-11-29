@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Game
+comment1.params=
+comment1.target=Player\ getP1()
+comment1.text=\r\n\ Getters\ for\ players\ in\ game\r\n
+comment2.params=
+comment2.target=Player\ getP2()
+comment3.params=
+comment3.target=int\ determineNumberPlayers()
+comment3.text=\r\n\ Returns\ 1\ or\ 2\ based\ on\ how\ many\ players\ are\ playing\ RPS\r\n
+comment4.params=p1\ p2
+comment4.target=int\ comparePlayers(Player,\ Player)
+comment4.text=\r\n\ Compare\ player\ values\ and\ return\ 1\ for\ p1\ win,\ 0\ for\ tie,\ -1\ for\ loss\r\n
+comment5.params=
+comment5.target=void\ setPlayers()
+comment5.text=\r\n\ Will\ set\ player\ data\ based\ on\ how\ many\ players\ present\r\n
+comment6.params=win
+comment6.target=void\ updateScore(int)
+comment6.text=\r\n\ Update\ score\ based\ on\ who\ win.\ \ win\ \=\ 1\ is\ p1\ win,\ win\ \=\ 0\ is\ tie,\ win\ \=\ -1\ p2\ win\r\n
+comment7.params=
+comment7.target=boolean\ continueGame()
+comment7.text=\r\n\ Ask\ to\ continue\ and\ return\ true\ for\ yes\r\n
+numComments=8
